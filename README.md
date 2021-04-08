@@ -25,3 +25,14 @@ c'est à dire un package n'a pas pu être mis à jour
 <code>Unattended-Upgrade::Automatic-Reboot "false";</code>
 * enfin indiquer l'heure du démarrage 
 <code>Unattended-Upgrade::Automatic-Reboot-Time "02:00";</code>
+
+## pour mieux gérer son serveur ubuntu 
+on va installer **etckeeper** et **logwatch**
+au fait etckeeper, nous permet de versionner l'etat de notre serveur ce qui nous permet de revenir à l'etat precedent à 
+tout moment c'est à dire on pourra faire des commit vraiment c'est outil très pratique
+### Pour installer Etckeeper en supposant que vous êtes déjà root
+<code>apt install etckeeper</code>
+
+quand à Logwatch, on pouvoir automatiser la gestion des log très facilement avec l'envoi de mail quotidient 
+### Pour installer logwatch
+<code>apt install logwatch</code>
